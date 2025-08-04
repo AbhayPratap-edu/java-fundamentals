@@ -60,6 +60,7 @@ public class StringSyntax
         //split("char")     splitString into array          text.split(" "); / text.split("[, :]");
         //compareTo()       compare 2 strings lexicographically || A.compareTo(B);
         //compareTo()       return >0 if( A > B ) | <0 if( A < B ) | 0 if both strings are equal
+        //matches()         checks string against the regex  str.matches(regex) 
 
 
         String str3 = "hello"; // Stored in string pool
@@ -68,6 +69,16 @@ public class StringSyntax
 
         System.out.println(str3.equals(str4));//TRUE
         System.out.println(str3.equalsIgnoreCase("HELLO"));//TRUE
+
+        // ✅ Regex validation using matches()
+        String username = "Ganesh_123";
+        String regex = "^[a-zA-Z][a-zA-Z0-9_]{7,29}$";// regex - regular expression
+
+        if (username.matches(regex)) {
+            System.out.println("Valid username");
+        } else {
+            System.out.println("Invalid username");
+        }
 
         //split() method breaks a string into an array of substrings
         //String[] split(String regex); regex: A regular expression pattern used as the delimiter
