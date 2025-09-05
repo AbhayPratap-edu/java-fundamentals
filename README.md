@@ -12,7 +12,7 @@ Perfect for beginners and intermediate developers learning Java.
 <pre>
 java-fundamentals/
 ├── java-fundamentals/
-│   ├── 📁 R.Lafor Data Structures
+│   ├── 📁 R.Lafore Data Structures
 │   ├── 📄 AbstractInterface.java
 │   ├── 📄 AnonymousObjectClass.java
 │   ├── 📄 Array.java
@@ -31,6 +31,8 @@ java-fundamentals/
 
 ---
 
+## 📁  R.Lafore Data Structures 
+# Waiting
 
 ## 📚 Topics Covered 
 
