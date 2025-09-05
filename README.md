@@ -33,7 +33,7 @@ java-fundamentals/
 
 ### [📁 R.Lafore Data Structures](java-fundamentals/R.Lafore%20Data%20Structures/)
 
-** Waiting**
+- ** Waiting**
 
 ## 📚 Topics Covered 
 
