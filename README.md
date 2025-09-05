@@ -31,7 +31,7 @@ java-fundamentals/
 
 ---
 
-### 📁  R.Lafore Data Structures 
+### 📁  R.Lafore-Data-Structures 
 ** Waiting
 
 ## 📚 Topics Covered 
