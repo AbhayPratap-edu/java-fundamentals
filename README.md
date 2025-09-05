@@ -71,7 +71,6 @@ java-fundamentals/
 
 - **👻 Anonymous & Inner Classes**  
   Concise one-time use classes and advanced OOP techniques  
-  _`(AnonymousObjectClass.java)`_
   [  _`(AnonymousObjectClass.java)`_](java-fundamentals/AnonymousObjectClass.java/)
 
 ---
