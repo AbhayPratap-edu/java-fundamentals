@@ -81,14 +81,13 @@ java-fundamentals/
 
 - **📚 Arrays**  
   1D, 2D, 3D arrays, and arrays of objects  
-  _`(Array.java)`_
-
+  [_`(Array.java)`_](java-fundamentals/Array.java)
 - **📦 Collection Framework**  
   Lists, Sets, Maps (`ArrayList`, `LinkedList`, `HashMap`, `HashSet`, `TreeSet`)
   - **🔄 Enhanced For-Loop & Iterators**  
   Modern and traditional ways to traverse collections
 
-  _`(CollectionFrameWork.java)`_
+  [_`(CollectionFrameWork.java)`_](java-fundamentals/CollectionFrameWork.java)
 
 
 ---
@@ -97,19 +96,19 @@ java-fundamentals/
 
 - **⚠️ Exception Handling**  
   Try-catch blocks, custom exceptions, checked vs unchecked errors  
-  _`(ExceptionHandling.java)`_
+  [_`(ExceptionHandling.java)`_](java-fundamentals/ExceptionHandling.java)
 
 - **🧵 Multithreading**  
   Thread creation, synchronization, and thread safety  
-  _`(ThreadDemo.java)`_
+  [_`(ThreadDemo.java)`_](java-fundamentals/ThreadDemo.java)
 
 - **🧵 String Manipulation & StringBuilder**  
   Common string operations and performance optimization  
-  _`(StringSyntax.java)`_
+  [_`(StringSyntax.java)`_](java-fundamentals/StringSyntax.java)
 
 - **🔁 Methods & Recursion**  
   Static vs instance methods, method overloading, recursion patterns  
-  _`(MethodRecursion.java)`_
+  [_`(MethodRecursion.java)`_](java-fundamentals/MethodRecursion.java)
 
 ---
 
