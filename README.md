@@ -44,15 +44,15 @@ java-fundamentals/
   - **🔁 Control Structures**  
   Loops (`for`, `while`, `do-while`), `if-else`, `switch` statements
 
-  _`(DataTypeLoop.java)`_
+  [_`(DataTypeLoop.java)`_](java-fundamentals/DataTypeLoop.java)
 
 - **🖨️ Input/Output Operations**  
   User input, console output, and file basics  
-  _`(InputOutput.java)`_
+ [ _`(InputOutput.java)`_](java-fundamentals/InputOutput.java)
 
 - **🧭 Main Method Structure**  
   Entry point, program execution flow  
-  _`(Main.java)`_
+  [_`(Main.java)`_](java-fundamentals/Main.java)
 
 ---
 
@@ -63,11 +63,13 @@ java-fundamentals/
   - **🛡️ Encapsulation, Inheritance, Polymorphism**  
   Access control, code reuse, dynamic method behavior
 
-  _`(Oop.java, Oop2.java)`_
+  [_`(Oop.java)`_](java-fundamentals/Oop.java)
+    [_`( Oop2.java)`_](java-fundamentals/Oop2.java)
+
 
 - **🧩 Abstract Classes & Interfaces**  
   Blueprint classes and contracts for implementation  
-  _`(AbstractInterface.java)`_
+  [ _`(AbstractInterface.java)`_](java-fundamentals/AbstractInterface.java)
 
 - **👻 Anonymous & Inner Classes**  
   Concise one-time use classes and advanced OOP techniques  
