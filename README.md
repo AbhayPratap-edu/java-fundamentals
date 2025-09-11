@@ -119,12 +119,6 @@ java-fundamentals/
 
 ## 💡 Features
 
-- **Well-commented code** with detailed explanations
-- **Practical examples** demonstrating real-world usage
-- **Complete coverage** from basics to advanced concepts
-- **Easy to understand** structure for progressive learning
-- 
-
 ---
 
 **Happy Learning! 🎯**
