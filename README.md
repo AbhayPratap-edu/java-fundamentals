@@ -124,17 +124,6 @@ java-fundamentals/
 - **Complete coverage** from basics to advanced concepts
 - **Easy to understand** structure for progressive learning
 - 
-## 🤝 Contributing
-
-Feel free to:
-- Report issues or bugs
-- Suggest improvements
-- Add more examples
-- Enhance documentation
-
-## ⭐ Show Your Support
-
-If this repository helped you learn Java, please give it a star!
 
 ---
 
