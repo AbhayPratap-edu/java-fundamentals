@@ -116,9 +116,6 @@ java-fundamentals/
 
 ---
 
-
-## 💡 Features
-
 ---
 
 **Happy Learning! 🎯**
