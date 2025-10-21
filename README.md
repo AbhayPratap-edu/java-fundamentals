@@ -33,7 +33,7 @@ java-fundamentals/
 
 ### [📁 R.Lafore Data Structures](java-fundamentals/R.Lafore%20Data%20Structures/)
 
-- **🔢 Wait**  
+- **🔢[`Readme.md`](java-fundamentals/R.Lafore%20Data%20Structures/README.md)**  
 
 ## 📚 Topics Covered 
 
