@@ -46,7 +46,22 @@ flowchart TD
 | **Guaranteed performance**|: Balanced trees (Red-Black, 2-3-4) |
 
 ---
-## 📊 Special-Purpose Data Storage Structures
+## 📊 Data Structure Performance Comparison
+
+### General-Purpose Data Storage Structures
+
+| Data Structure | Search | Insertion | Deletion | Traversal |
+|----------------|--------|-----------|----------|-----------|
+| **Array** | O(N) | O(1) | O(N) | — |
+| **Ordered array** | O(log N) | O(N) | O(N) | O(N) |
+| **Linked list** | O(N) | O(1) | O(N) | — |
+| **Ordered linked list** | O(N) | O(N) | O(N) | O(N) |
+| **Binary tree** (average) | O(log N) | O(log N) | O(log N) | O(N) |
+| **Binary tree** (worst case) | O(N) | O(N) | O(N) | O(N) |
+| **Balanced tree** (average and worst case) | O(log N) | O(log N) | O(log N) | O(N) |
+| **Hash table** | O(1) | O(1) | O(1) | — |
+
+### Special-Purpose Data Storage Structures
 
 | Data Structure | Insertion | Deletion | Comment |
 |----------------|-----------|----------|---------|
@@ -55,32 +70,20 @@ flowchart TD
 | **Priority queue** (ordered array) | O(N) | O(1) | Deletes highest-priority item |
 | **Priority queue** (heap) | O(log N) | O(log N) | Deletes highest-priority item |
 
-## 📊 Special-Purpose Data Storage Structures
-
-The choice of data structure significantly impacts performance for specialized operations:
-
-| Data Structure | Insertion | Deletion | Comment |
-|----------------|-----------|----------|---------|
-| **Stack** (array or linked list) | O(1) | O(1) | Deletes most recently inserted item (LIFO) |
-| **Queue** (array or linked list) | O(1) | O(1) | Deletes least recently inserted item (FIFO) |
-| **Priority queue** (ordered array) | O(N) | O(1) | Deletes highest-priority item |
-| **Priority queue** (heap) | O(log N) | O(log N) | Deletes highest-priority item |
-
-### Key Insights
-
-- **Stacks & Queues**: Both offer O(1) operations, making them ideal for fast sequential access patterns
-- **Priority Queue (Array)**: Fast deletion O(1) but slow insertion O(N) due to maintaining sorted order
-- **Priority Queue (Heap)**: Balanced performance with O(log N) for both operations, making it superior for large datasets
-
 ### When to Use
-
-- **Stack**: Function calls, undo/redo, expression evaluation, backtracking
-- **Queue**: Task scheduling, BFS traversal, buffering
-- **Priority Queue (Array)**: Small datasets where removals are frequent
-- **Priority Queue (Heap)**: Large datasets requiring efficient insert and remove operations
-
-
-
+| Data Structure | Use Case                |
+|-----------|--------------------------------------------------------------------------|
+| **Array** | Image processing, game boards, buffer management, fixed-size data storage |
+| **Ordered Array** | Phone directories, dictionary lookups, static sorted data, binary search requirements |
+| **Linked List** | Music playlists, browser history, undo/redo operations, dynamic memory allocation |
+| **Ordered Linked List** | Sorted event logs, maintaining insertion-order sorted data, merge operations |
+| **Binary Tree** | File systems, expression parsing, database indexing, autocomplete features |
+| **Balanced Tree** | Java TreeMap, C++ std::map, guaranteed O(log n) operations, worst-case performance matters |
+| **Hash Table** | Caching systems, symbol tables, password storage, duplicate detection, constant-time lookups |
+| **Stack** | Function calls, undo/redo, expression evaluation, backtracking, DFS algorithm |
+| **Queue** | Task scheduling, BFS traversal, buffering, print job management, message queues |
+| **Priority Queue (Array)** | Small datasets where removals are frequent, simple event scheduling |
+| **Priority Queue (Heap)** | Large datasets requiring efficient insert and remove operations, Dijkstra's algorithm, top-K problems |
 ---
 
 ## 📁 ARRAYS
