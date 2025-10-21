@@ -127,7 +127,7 @@ Data structures and algorithms implemented in Java — following Robert Lafore's
 
 - **Delimiter Checker**  
    Validates matching brackets using stack  
-  [`delimiter.java`](java-fundamentals/R.Lafore%20Data%20Structures/delimiter.java)
+  [`delimiter.java`](delimiter.java)
 
 
 ---
