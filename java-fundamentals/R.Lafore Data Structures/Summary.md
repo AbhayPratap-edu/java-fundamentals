@@ -20,7 +20,6 @@ flowchart TD
     Q5 -->|Yes| BST[Binary Search Tree]
     Q5 -->|No| BalancedTree[Balanced Tree<br/>Red-Black / 2-3-4]
 
-
 ```
 ###  Decision Path Explanation
 
