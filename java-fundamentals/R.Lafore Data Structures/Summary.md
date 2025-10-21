@@ -45,6 +45,40 @@ flowchart TD
 | **Insert-heavy**|: Unordered arrays, linked lists, or hash tables |
 | **Guaranteed performance**|: Balanced trees (Red-Black, 2-3-4) |
 
+---
+## 📊 Special-Purpose Data Storage Structures
+
+| Data Structure | Insertion | Deletion | Comment |
+|----------------|-----------|----------|---------|
+| **Stack** (array or linked list) | O(1) | O(1) | Deletes most recently inserted item |
+| **Queue** (array or linked list) | O(1) | O(1) | Deletes least recently inserted item |
+| **Priority queue** (ordered array) | O(N) | O(1) | Deletes highest-priority item |
+| **Priority queue** (heap) | O(log N) | O(log N) | Deletes highest-priority item |
+
+## 📊 Special-Purpose Data Storage Structures
+
+The choice of data structure significantly impacts performance for specialized operations:
+
+| Data Structure | Insertion | Deletion | Comment |
+|----------------|-----------|----------|---------|
+| **Stack** (array or linked list) | O(1) | O(1) | Deletes most recently inserted item (LIFO) |
+| **Queue** (array or linked list) | O(1) | O(1) | Deletes least recently inserted item (FIFO) |
+| **Priority queue** (ordered array) | O(N) | O(1) | Deletes highest-priority item |
+| **Priority queue** (heap) | O(log N) | O(log N) | Deletes highest-priority item |
+
+### Key Insights
+
+- **Stacks & Queues**: Both offer O(1) operations, making them ideal for fast sequential access patterns
+- **Priority Queue (Array)**: Fast deletion O(1) but slow insertion O(N) due to maintaining sorted order
+- **Priority Queue (Heap)**: Balanced performance with O(log N) for both operations, making it superior for large datasets
+
+### When to Use
+
+- **Stack**: Function calls, undo/redo, expression evaluation, backtracking
+- **Queue**: Task scheduling, BFS traversal, buffering
+- **Priority Queue (Array)**: Small datasets where removals are frequent
+- **Priority Queue (Heap)**: Large datasets requiring efficient insert and remove operations
+
 
 
 ---
