@@ -55,12 +55,14 @@ Data structures and algorithms implemented in Java — following Robert Lafore's
 │   ├── 📄 HeapSort.java
 │   ├── 📄 ShellSorting.java  
 │
+└── 📄 Summary.md
 └── 📄 README.md
   </pre>
 
 
 ---
-
+## [`Data Structure Summary`](Summary.md)  
+---
 ## 📚 Data Structures
 
 ### 🟦 Arrays & Basic Structures
