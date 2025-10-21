@@ -23,6 +23,7 @@ Data structures and algorithms implemented in Java — following Robert Lafore's
 │   ├── 📄 QueOnLinkList.java
 │   ├── 📄 StackOnArray.java
 │   ├── 📄 StackOnLinkList.java
+│   ├── 📄 delimiter.java
 │
 ├── 📁 Trees
 │   ├── 📄 BinaryTree.java
@@ -50,6 +51,7 @@ Data structures and algorithms implemented in Java — following Robert Lafore's
 │   ├── 📄 Sorting.java
 │   ├── 📄 MergeSort.java
 │   ├── 📄 QuickSort1.java
+│   ├── 📄 QuickSort2.java  
 │   ├── 📄 HeapSort.java
 │   ├── 📄 ShellSorting.java  
 │
@@ -123,6 +125,11 @@ Data structures and algorithms implemented in Java — following Robert Lafore's
   Elements dequeued by priority, not order  
   [`PriorityQueOnArray.java`](PriorityQueOnArray.java)
 
+- **Delimiter Checker**  
+   Validates matching brackets using stack  
+  [`delimiter.java`](java-fundamentals/R.Lafore%20Data%20Structures/delimiter.java)
+
+
 ---
 
 
@@ -160,7 +167,7 @@ Data structures and algorithms implemented in Java — following Robert Lafore's
 
 ### 🟪 Heaps
 
-- **⛰️ Heap (Max-Heap)**  
+- **Heap (Max-Heap)**  
   Complete binary tree with heap property (parent ≥ children)  
   [`Heap.java`](Heap.java)
 
@@ -196,9 +203,14 @@ Data structures and algorithms implemented in Java — following Robert Lafore's
   Divide-and-conquer stable sort  
   [`MergeSort.java`](MergeSort.java)
 
-- **Quick Sort**  
-  Partition-based in-place sort  
-  [`QuickSort1.java`](QuickSort1.java)
+- **⚡ Quick Sort (Basic)**  
+   Simple partition-based in-place sort  
+  [`QuickSort1.java`](java-fundamentals/R.Lafore%20Data%20Structures/QuickSort1.java)
+
+- **⚡ Quick Sort (Optimized)**  
+  Median-of-three pivot + manual sort for small arrays  
+  [`QuickSort2.java`](java-fundamentals/R.Lafore%20Data%20Structures/QuickSort2.java)
+
 
 - **Heap Sort**  
   Uses max-heap to sort in-place  
