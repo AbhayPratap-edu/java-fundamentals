@@ -35,16 +35,15 @@ flowchart TD
 
 
 ###  Key Considerations
-| Data Type |  Data Structure            |
-|----------------|----------------------------------------------------|
-| **Small data** |(< 100 elements): Arrays or simple lists work well |
-| **Large data** |(> 1000 elements): Consider hash tables or balanced trees |
-| **Predictable size**|: Arrays are memory-efficient |
-| **Unpredictable size**|: Use dynamic structures (linked lists, trees) |
-| **Search-heavy**|: Ordered arrays, BSTs, or hash tables |
-| **Insert-heavy**|: Unordered arrays, linked lists, or hash tables |
-| **Guaranteed performance**|: Balanced trees (Red-Black, 2-3-4) |
 
+- **Small data** (< 100 elements): Arrays or simple lists work well
+- **Large data** (> 1000 elements): Consider hash tables or balanced trees
+- **Predictable size**: Arrays are memory-efficient
+- **Unpredictable size**: Use dynamic structures (linked lists, trees)
+- **Search-heavy**: Ordered arrays, BSTs, or hash tables
+- **Insert-heavy**: Unordered arrays, linked lists, or hash tables
+- **Guaranteed performance**: Balanced trees (Red-Black, 2-3-4)
+  
 ---
 ## 📊 Data Structure Performance Comparison
 
