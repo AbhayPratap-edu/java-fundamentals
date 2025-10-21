@@ -1,6 +1,52 @@
 # 📊 Complete Summary of 32 Data Structure Files
 
 ---
+```mermaid
+flowchart TD
+    Start([Start]) --> Q1{Small amount<br/>of data?}
+    
+    Q1 -->|Yes| Q2{Amount of data<br/>predictable?}
+    Q1 -->|No| Q3{Searching and<br/>insertion must<br/>be very fast?}
+
+    Q2 -->|No| LinkedList[Linked List]
+    Q2 -->|Yes| Q4{Search speed<br/>more important<br/>than insertion<br/>speed?}
+
+    Q3 -->|Yes| HashTable[Hash Table]
+    Q3 -->|No| Q5{Key distribution<br/>guaranteed<br/>random?}
+
+    Q4 -->|Yes| OrderedArray[Ordered Array]
+    Q4 -->|No| UnorderedArray[Unordered Array]
+
+    Q5 -->|Yes| BST[Binary Search Tree]
+    Q5 -->|No| BalancedTree[Balanced Tree<br/>Red-Black / 2-3-4]
+
+
+```
+###  Decision Path Explanation
+
+| Decision Point | Recommendation | Why? |
+|----------------|----------------|------|
+| **Small + Unpredictable size** | **Linked List** | Dynamic sizing, no wasted space |
+| **Small + Predictable + Search priority** | **Ordered Array** | Binary search O(log n), space efficient |
+| **Small + Predictable + Insert priority** | **Unordered Array** | Fast O(1) insertion at end |
+| **Large + Very fast operations needed** | **Hash Table** | O(1) average search/insert |
+| **Large + Random keys** | **Binary Search Tree** | O(log n) if balanced naturally |
+| **Large + Non-random keys** | **Balanced Tree** | Guaranteed O(log n) operations |
+
+
+###  Key Considerations
+
+- **Small data** (< 100 elements): Arrays or simple lists work well
+- **Large data** (> 1000 elements): Consider hash tables or balanced trees
+- **Predictable size**: Arrays are memory-efficient
+- **Unpredictable size**: Use dynamic structures (linked lists, trees)
+- **Search-heavy**: Ordered arrays, BSTs, or hash tables
+- **Insert-heavy**: Unordered arrays, linked lists, or hash tables
+- **Guaranteed performance**: Balanced trees (Red-Black, 2-3-4)
+
+
+
+---
 
 ## 📁 ARRAYS
 
