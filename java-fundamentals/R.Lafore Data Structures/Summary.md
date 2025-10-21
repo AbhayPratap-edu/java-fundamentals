@@ -190,53 +190,9 @@
 
 ---
 
-## 📁 HASH TABLES
-
-### 14. HashTable.java
-
-**Definition:** Hash table using linear probing for collision resolution.  
-**Key Idea:** Open addressing - find next empty slot on collision.
-
-| Aspect | Details |
-|--------|---------|
-| **Advantages** | Fast average O(1) operations, no extra memory for links, cache-friendly |
-| **Disadvantages** | Clustering problems, degrades to O(n) when full, requires good hash function |
-| **Efficiency** | insert/find/delete: O(1) average, O(n) worst case |
-| **Use Cases** | Dictionaries, caches, symbol tables, small to medium datasets |
-
----
-
-### 15. HashChain.java
-
-**Definition:** Hash table using separate chaining (linked lists) for collisions.  
-**Key Idea:** Each bucket contains a linked list of colliding elements.
-
-| Aspect | Details |
-|--------|---------|
-| **Advantages** | Handles high load factors well, simple deletion, no clustering |
-| **Disadvantages** | Extra memory for links, cache-unfriendly, variable performance |
-| **Efficiency** | insert/find/delete: O(1) average, O(n) worst case (all in one chain) |
-| **Use Cases** | Databases, large datasets, high collision scenarios, Java HashMap |
-
----
-
-### 16. DoubleHash.java
-
-**Definition:** Hash table using double hashing for collision resolution.  
-**Key Idea:** Second hash function determines probe step size.
-
-| Aspect | Details |
-|--------|---------|
-| **Advantages** | Eliminates clustering, better distribution than linear probing, fast |
-| **Disadvantages** | More complex, requires two hash functions, still degrades when near full |
-| **Efficiency** | insert/find/delete: O(1) average, O(n) worst case |
-| **Use Cases** | High-performance hash tables, compiler symbol tables, better than linear probing |
-
----
-
 ## 📁 TREES
 
-### 17. BinaryTree.java
+### 14. BinaryTree.java
 
 **Definition:** Binary search tree with left < parent < right property.  
 **Key Idea:** Hierarchical structure enabling logarithmic search in balanced trees.
@@ -250,7 +206,7 @@
 
 ---
 
-### 18. RedBlackTree.java
+### 15. RedBlackTree.java
 
 **Definition:** Self-balancing BST with color properties ensuring balance.  
 **Key Idea:** Color rules and rotations guarantee O(log n) height.
@@ -264,7 +220,7 @@
 
 ---
 
-### 19. Tree234.java
+### 16. Tree234.java
 
 **Definition:** 2-3-4 tree where nodes can have 2, 3, or 4 children.  
 **Key Idea:** Multiway tree that stays balanced, precursor to B-trees.
@@ -275,6 +231,50 @@
 | **Disadvantages** | More memory per node, complex node splitting logic |
 | **Efficiency** | insert/find: O(log n) guaranteed |
 | **Use Cases** | Educational tool for B-trees, database index foundations |
+
+---
+
+## 📁 HASH TABLES
+
+### 17. HashTable.java
+
+**Definition:** Hash table using linear probing for collision resolution.  
+**Key Idea:** Open addressing - find next empty slot on collision.
+
+| Aspect | Details |
+|--------|---------|
+| **Advantages** | Fast average O(1) operations, no extra memory for links, cache-friendly |
+| **Disadvantages** | Clustering problems, degrades to O(n) when full, requires good hash function |
+| **Efficiency** | insert/find/delete: O(1) average, O(n) worst case |
+| **Use Cases** | Dictionaries, caches, symbol tables, small to medium datasets |
+
+---
+
+### 18. HashChain.java
+
+**Definition:** Hash table using separate chaining (linked lists) for collisions.  
+**Key Idea:** Each bucket contains a linked list of colliding elements.
+
+| Aspect | Details |
+|--------|---------|
+| **Advantages** | Handles high load factors well, simple deletion, no clustering |
+| **Disadvantages** | Extra memory for links, cache-unfriendly, variable performance |
+| **Efficiency** | insert/find/delete: O(1) average, O(n) worst case (all in one chain) |
+| **Use Cases** | Databases, large datasets, high collision scenarios, Java HashMap |
+
+---
+
+### 19. DoubleHash.java
+
+**Definition:** Hash table using double hashing for collision resolution.  
+**Key Idea:** Second hash function determines probe step size.
+
+| Aspect | Details |
+|--------|---------|
+| **Advantages** | Eliminates clustering, better distribution than linear probing, fast |
+| **Disadvantages** | More complex, requires two hash functions, still degrades when near full |
+| **Efficiency** | insert/find/delete: O(1) average, O(n) worst case |
+| **Use Cases** | High-performance hash tables, compiler symbol tables, better than linear probing |
 
 ---
 
@@ -294,95 +294,9 @@
 
 ---
 
-## 📁 SORTING ALGORITHMS
-
-### 21. MergeSort.java
-
-**Definition:** Divide-and-conquer stable sorting algorithm.  
-**Key Idea:** Recursively split, sort halves, then merge sorted halves.
-
-| Aspect | Details |
-|--------|---------|
-| **Advantages** | Stable sort, guaranteed O(n log n), predictable performance, good for linked lists |
-| **Disadvantages** | Requires O(n) extra space, not in-place, slower than quicksort in practice |
-| **Efficiency** | Time: O(n log n) all cases, Space: O(n) |
-| **Use Cases** | Linked list sorting, external sorting, stable sorting required, large datasets |
-
----
-
-### 22. QuickSort1.java
-
-**Definition:** Partition-based in-place sorting algorithm.  
-**Key Idea:** Choose pivot, partition around it, recursively sort partitions.
-
-| Aspect | Details |
-|--------|---------|
-| **Advantages** | Fast average case, in-place (O(log n) space), cache-friendly |
-| **Disadvantages** | Unstable, worst case O(n²), pivot choice critical |
-| **Efficiency** | Time: O(n log n) average, O(n²) worst; Space: O(log n) |
-| **Use Cases** | General-purpose sorting, when average case matters, small extra space available |
-
----
-
-### 23. QuickSort2.java
-
-**Definition:** Optimized QuickSort with median-of-three pivot selection and manual sort for small arrays.  
-**Key Idea:** Better pivot selection avoids worst case; switches to insertion sort for small subarrays.
-
-| Aspect | Details |
-|--------|---------|
-| **Advantages** | Avoids O(n²) on sorted data, faster for real-world data, optimized for small arrays |
-| **Disadvantages** | More complex code, still unstable |
-| **Efficiency** | Time: O(n log n) average (better constants), O(n²) worst (rare); Space: O(log n) |
-| **Use Cases** | Production systems, C++ std::sort, when performance critical |
-
----
-
-### 24. HeapSort.java
-
-**Definition:** Sorting algorithm using heap data structure.  
-**Key Idea:** Build max-heap, repeatedly remove max and place at array end.
-
-| Aspect | Details |
-|--------|---------|
-| **Advantages** | In-place sort, guaranteed O(n log n), no worst case like quicksort |
-| **Disadvantages** | Unstable, slower than quicksort in practice, not cache-friendly |
-| **Efficiency** | Time: O(n log n) all cases, Space: O(1) |
-| **Use Cases** | When O(n log n) guaranteed needed, limited memory, embedded systems |
-
----
-
-### 25. ShellSorting.java
-
-**Definition:** Improved insertion sort using gap sequences.  
-**Key Idea:** Sort elements at intervals (gaps), gradually reduce gap to 1.
-
-| Aspect | Details |
-|--------|---------|
-| **Advantages** | Faster than insertion sort, in-place, simple to implement, good for medium data |
-| **Disadvantages** | Performance depends on gap sequence, not stable, not O(n log n) guaranteed |
-| **Efficiency** | Time: O(n log² n) to O(n^3/2) depending on gap; Space: O(1) |
-| **Use Cases** | Medium-sized datasets, embedded systems, when simplicity matters |
-
----
-
-### 26. Sorting.java
-
-**Definition:** Collection of basic sorting utilities and comparison functions.  
-**Key Idea:** Helper methods for sorting demonstrations.
-
-| Aspect | Details |
-|--------|---------|
-| **Advantages** | Centralized sorting tools, reusable code, educational |
-| **Disadvantages** | Not a standalone structure, depends on context |
-| **Efficiency** | Varies by method implemented |
-| **Use Cases** | Learning tool, comparing sorting algorithms, utilities |
-
----
-
 ## 📁 GRAPH ALGORITHMS
 
-### 27. GraphN_BFS.java
+### 21. GraphN_BFS.java
 
 **Definition:** Breadth-First Search graph traversal using queue.  
 **Key Idea:** Visit all neighbors at current depth before going deeper.
@@ -396,7 +310,7 @@
 
 ---
 
-### 28. GraphN_DFS.java
+### 22. GraphN_DFS.java
 
 **Definition:** Depth-First Search graph traversal using stack/recursion.  
 **Key Idea:** Explore as far as possible before backtracking.
@@ -410,7 +324,7 @@
 
 ---
 
-### 29. Graph_TopoSorting.java
+### 23. Graph_TopoSorting.java
 
 **Definition:** Linear ordering of DAG vertices respecting edge directions.  
 **Key Idea:** Vertices with no predecessors come first.
@@ -424,7 +338,7 @@
 
 ---
 
-### 30. GraphW_MSTW.java
+### 24. GraphW_MSTW.java
 
 **Definition:** Minimum Spanning Tree for weighted graphs.  
 **Key Idea:** Connect all vertices with minimum total edge weight.
@@ -438,7 +352,7 @@
 
 ---
 
-### 31. MSTree.java
+### 25. MSTree.java
 
 **Definition:** Alternative Minimum Spanning Tree implementation.  
 **Key Idea:** Likely implements Kruskal's or Prim's algorithm.
@@ -452,7 +366,7 @@
 
 ---
 
-### 32. GraphDW_SP.java
+### 26. GraphDW_SP.java
 
 **Definition:** Dijkstra's shortest path algorithm for weighted directed graphs.  
 **Key Idea:** Greedy algorithm finding shortest paths from source to all vertices.
@@ -466,4 +380,88 @@
 
 ---
 
+## 📁 SORTING ALGORITHMS
+
+### 27. MergeSort.java
+
+**Definition:** Divide-and-conquer stable sorting algorithm.  
+**Key Idea:** Recursively split, sort halves, then merge sorted halves.
+
+| Aspect | Details |
+|--------|---------|
+| **Advantages** | Stable sort, guaranteed O(n log n), predictable performance, good for linked lists |
+| **Disadvantages** | Requires O(n) extra space, not in-place, slower than quicksort in practice |
+| **Efficiency** | Time: O(n log n) all cases, Space: O(n) |
+| **Use Cases** | Linked list sorting, external sorting, stable sorting required, large datasets |
+
+---
+### 28. QuickSort1.java
+
+**Definition:** Partition-based in-place sorting algorithm.  
+**Key Idea:** Choose pivot, partition around it, recursively sort partitions.
+
+| Aspect | Details |
+|--------|---------|
+| **Advantages** | Fast average case, in-place (O(log n) space), cache-friendly |
+| **Disadvantages** | Unstable, worst case O(n²), pivot choice critical |
+| **Efficiency** | Time: O(n log n) average, O(n²) worst; Space: O(log n) |
+| **Use Cases** | General-purpose sorting, when average case matters, small extra space available |
+
+---
+
+### 29. QuickSort2.java
+
+**Definition:** Optimized QuickSort with median-of-three pivot selection and manual sort for small arrays.  
+**Key Idea:** Better pivot selection avoids worst case; switches to insertion sort for small subarrays.
+
+| Aspect | Details |
+|--------|---------|
+| **Advantages** | Avoids O(n²) on sorted data, faster for real-world data, optimized for small arrays |
+| **Disadvantages** | More complex code, still unstable |
+| **Efficiency** | Time: O(n log n) average (better constants), O(n²) worst (rare); Space: O(log n) |
+| **Use Cases** | Production systems, C++ std::sort, when performance critical |
+
+---
+
+### 30. HeapSort.java
+
+**Definition:** Sorting algorithm using heap data structure.  
+**Key Idea:** Build max-heap, repeatedly remove max and place at array end.
+
+| Aspect | Details |
+|--------|---------|
+| **Advantages** | In-place sort, guaranteed O(n log n), no worst case like quicksort |
+| **Disadvantages** | Unstable, slower than quicksort in practice, not cache-friendly |
+| **Efficiency** | Time: O(n log n) all cases, Space: O(1) |
+| **Use Cases** | When O(n log n) guaranteed needed, limited memory, embedded systems |
+
+---
+
+### 31. ShellSorting.java
+
+**Definition:** Improved insertion sort using gap sequences.  
+**Key Idea:** Sort elements at intervals (gaps), gradually reduce gap to 1.
+
+| Aspect | Details |
+|--------|---------|
+| **Advantages** | Faster than insertion sort, in-place, simple to implement, good for medium data |
+| **Disadvantages** | Performance depends on gap sequence, not stable, not O(n log n) guaranteed |
+| **Efficiency** | Time: O(n log² n) to O(n^3/2) depending on gap; Space: O(1) |
+| **Use Cases** | Medium-sized datasets, embedded systems, when simplicity matters |
+
+---
+
+### 32. Sorting.java
+
+**Definition:** Collection of basic sorting utilities and comparison functions.  
+**Key Idea:** Helper methods for sorting demonstrations.
+
+| Aspect | Details |
+|--------|---------|
+| **Advantages** | Centralized sorting tools, reusable code, educational |
+| **Disadvantages** | Not a standalone structure, depends on context |
+| **Efficiency** | Varies by method implemented |
+| **Use Cases** | Learning tool, comparing sorting algorithms, utilities |
+
+---
 **📘 Note:** All implementations follow Robert Lafore's teaching approach from "Data Structures & Algorithms in Java"
