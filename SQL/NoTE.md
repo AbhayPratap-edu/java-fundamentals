@@ -1,32 +1,46 @@
-### SQL
-A database is a set of related information.  
-Relational databases   
-A relational database (RDB) stores data in tables that are related to each other through keys (primary & foreign).
+#  SQL Notes
+---
+## 📘 What is a Database?
 
-Each table = an entity (e.g., Customer, Order)
-Each row = a record
-Each column = an attribute
+A **database** is a set of related information.
 
-• Oracle Database from Oracle Corporation
-• SQL Server from Microsoft
-• DB2 Universal Database from IBM  
+## 🧩 Relational Databases
 
-open source database servers are Post‐greSQL and MySQL
+A **relational database (RDB)** stores data in **tables** that are related to each other through **keys** (primary & foreign).
 
-SQL: A Nonprocedural Language
+- Each **table** = an **entity** (e.g., `Customer`, `Order`)  
+- Each **row** = a **record**  
+- Each **column** = an **attribute**
 
-SQL (Structured Query Language) lets you declare what you want, not how to get it.
-You state what you want .
+### 🔹 Examples of Relational Databases
+- **Oracle Database** – Oracle Corporation  
+- **SQL Server** – Microsoft  
+- **DB2 Universal Database** – IBM  
 
-A procedural language defines both the desired results and the mechanism, or process, by which the results are generated.  
-Non‐procedural languages also define the desired results, but the process by which the results are generated is left to an external agent.  
-| Procedural (e.g., C, Python) | Nonprocedural (SQL)    |
-| ---------------------------- | ---------------------- |
-| Step-by-step instructions    | State desired result   |
-| You control flow             | DB engine optimizes it |
-| Focus on *how*               | Focus on *what*        |
+### 🔹 Open-source Database Servers
+- **PostgreSQL**  
+- **MySQL**
 
-Basic Termonology  
+---
+
+## 💻 SQL: A Nonprocedural Language
+
+**SQL (Structured Query Language)** lets you declare **what you want**, not **how to get it**.
+
+You describe the **desired result**, and the **database engine** determines how to retrieve it.
+
+### 🧠 Comparison: Procedural vs. Nonprocedural
+
+| **Procedural (e.g., C, Python)** | **Nonprocedural (SQL)** |
+|----------------------------------|--------------------------|
+| Step-by-step instructions        | State desired result     |
+| You control flow                 | DB engine optimizes it   |
+| Focus on *how*                   | Focus on *what*          |
+
+---
+
+## 🧱 Basic Terminology
+
 | **Term**       | **Definition** |
 |-----------------|----------------|
 | **Entity**      | Something of interest to the database user community. Examples include customers, parts, geographic locations, etc. |
@@ -37,27 +51,39 @@ Basic Termonology
 | **Primary key** | One or more columns that can be used as a unique identifier for each row in a table. |
 | **Foreign key** | One or more columns that can be used together to identify a single row in another table. |
 
-SELECT /* one or more things */ ...  
-FROM /* one or more places */ ...  
-WHERE /* one or more conditions apply */ ...  
-Most SQL implementations treat any text between the /* and */ tags as comments.
+## 🧮 Basic SQL Syntax
 
-SQL Statement Classes
+```sql
+SELECT /* one or more things */ ...
+FROM   /* one or more places */ ...
+WHERE  /* one or more conditions apply */ ...
+```
+Most SQL implementations treat any text between the `/*` and `*/` tags as comments.
+
+---
+
+## SQL Statement Classes
 
 SQL statements fall into three main categories:
-1️⃣ SQL Schema Statements:
+
+### 1. SQL Schema Statements
+
 Define and modify the structure of the database.
-CREATE, ALTER, DROP — how to design and manage schemas.
 
-2️⃣ SQL Data Statements
+- `CREATE`, `ALTER`, `DROP` — how to design and manage schemas
+
+### 2. SQL Data Statements
+
 Work with the data inside tables.
-SELECT – Query data
-INSERT, UPDATE, DELETE – Modify data
-Filtering (WHERE), sorting (ORDER BY), grouping (GROUP BY)
 
-3️⃣ SQL Transaction Statements
+- `SELECT` – Query data
+- `INSERT`, `UPDATE`, `DELETE` – Modify data
+- Filtering (`WHERE`), sorting (`ORDER BY`), grouping (`GROUP BY`)
+
+### 3. SQL Transaction Statements
+
 Control data consistency and safety.
-BEGIN, COMMIT, ROLLBACK
-Concepts: atomicity, consistency, isolation, durability (ACID)
 
+- `BEGIN`, `COMMIT`, `ROLLBACK`
+- Concepts: atomicity, consistency, isolation, durability (ACID)
 
