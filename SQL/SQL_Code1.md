@@ -80,16 +80,16 @@ SELECT person_id, fname, lname, eye_color, birth_date
 
 | Field       | Type                 | Null | Key | Default | Extra          |
 | ----------- | -------------------- | ---- | --- | ------- | -------------- |
-| person_id   | smallint unsigned    | NO   | PRI |         | auto_increment |
-| fname       | varchar(20)          | YES  |     |         |                |
-| lname       | varchar(20)          | YES  |     |         |                |
-| eye_color   | enum('BR','BL','GR') | YES  |     |         |                |
-| birth_date  | date                 | YES  |     |         |                |
-| street      | varchar(30)          | YES  |     |         |                |
-| city        | varchar(20)          | YES  |     |         |                |
-| state       | varchar(20)          | YES  |     |         |                |
-| country     | varchar(20)          | YES  |     |         |                |
-| postal_code | varchar(20)          | YES  |     |         |                |
+| person_id   | smallint unsigned    | NO   | PRI |  null   | auto_increment |
+| fname       | varchar(20)          | YES  |     |  null   |                |
+| lname       | varchar(20)          | YES  |     |  null   |                |
+| eye_color   | enum('BR','BL','GR') | YES  |     |  null   |                |
+| birth_date  | date                 | YES  |     |  null   |                |
+| street      | varchar(30)          | YES  |     |  null   |                |
+| city        | varchar(20)          | YES  |     |  null   |                |
+| state       | varchar(20)          | YES  |     |  null   |                |
+| country     | varchar(20)          | YES  |     |  null   |                |
+| postal_code | varchar(20)          | YES  |     |  null   |                |
 
 **Query #2**
 
