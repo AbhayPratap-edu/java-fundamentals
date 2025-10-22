@@ -55,5 +55,9 @@ SELECT – Query data
 INSERT, UPDATE, DELETE – Modify data
 Filtering (WHERE), sorting (ORDER BY), grouping (GROUP BY)
 
+3️⃣ SQL Transaction Statements
+Control data consistency and safety.
+BEGIN, COMMIT, ROLLBACK
+Concepts: atomicity, consistency, isolation, durability (ACID)
 
 
