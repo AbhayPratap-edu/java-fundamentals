@@ -1,4 +1,4 @@
-## Schema SQL
+## Schema SQL (v8)
 ```sql
 CREATE TABLE person
 (person_id SMALLINT UNSIGNED AUTO_INCREMENT,
