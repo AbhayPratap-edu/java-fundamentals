@@ -7,18 +7,17 @@
 
 ## 📑 Table of Contents
 
-- [Getting Started](#-1-getting-started)
-- [Local Changes](#-2-local-changes)
-- [Branches](#-3-branches)
-- [Commits & History](#-4-commits--history)
-- [Comparing Changes](#-5-comparing-changes)
-- [Stashing](#-6-stashing)
-- [Tags & Releases](#-7-tags--releases)
-- [Remote Repositories](#-8-remote-repositories)
-- [SSH Setup](#-9-ssh-key-setup)
-- [Advanced Operations](#-10-advanced-operations)
-- [Quick Reference](#-quick-reference)
-- [Common Mistakes](#-common-mistakes--fixes)
+- [Getting Started](Git-&-GitHub/Git-GitHub-getting-started.md)
+- [Local Changes](Local%20Changes.md)
+- [Branches](Branches.md)
+- [Commits & History](Commits&History.md)
+- [Comparing Changes & Stashing ](ComparingChanges&Stashing.md)
+- [Tags & Releases](Tags&Releases.md)
+- [Remote Repositories](RemoteRepositories.md)
+- [SSH Setup](Ssh-Key-Setup.md)
+- [Advanced Operations](Advanced-Operations.md)
+- [Common Mistakes](Common-Mistakes.md)
+- [Git-All-Commands](Git-&-GitHub/Git-all-commands.md)
 
 ---
 
