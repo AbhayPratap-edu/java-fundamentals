@@ -17,7 +17,7 @@
 - [SSH Setup](Ssh-Key-Setup.md)
 - [Advanced Operations](Advanced-Operations.md)
 - [Common Mistakes](Common-Mistakes.md)
-- [Git-All-Commands](Git-&-GitHub/Git-all-commands.md)
+- [Git-All-Commands](Git-all-commands.md)
 
 ---
 
