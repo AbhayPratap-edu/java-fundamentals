@@ -13,6 +13,7 @@ Perfect for beginners and intermediate developers learning Java.
 java-fundamentals/
 ├── java-fundamentals/
 │   ├── 📁 R.Lafore Data Structures
+│   ├── 📁 Git-&-GitHub
 │   ├── 📄 AbstractInterface.java
 │   ├── 📄 AnonymousObjectClass.java
 │   ├── 📄 Array.java
@@ -33,7 +34,13 @@ java-fundamentals/
 
 ### [📁 R.Lafore Data Structures](java-fundamentals/R.Lafore%20Data%20Structures/)
 
-- **[`README`](java-fundamentals/R.Lafore%20Data%20Structures/README.md)**  
+- **[`README`](java-fundamentals/R.Lafore%20Data%20Structures/README.md)**
+
+---
+
+### [📁 Git-&-GitHub ](Git-&-GitHub/)
+
+- **[`Getting-Started`](Git-&-GitHub/Git-GitHub-getting-started.md)**  
  
 
 ## 📚 Topics Covered 
