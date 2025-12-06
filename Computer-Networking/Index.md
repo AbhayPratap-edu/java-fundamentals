@@ -1,5 +1,8 @@
 # Computer Networking: A Top-Down Approach (8th Edition)
-##  Complete Study Notes | Kurose & Ross
+## Revision Notes & Summaries
+
+**Authors:** James F. Kurose • Keith W. Ross  
+**Edition:** 8th Edition  
 
 ---
 
