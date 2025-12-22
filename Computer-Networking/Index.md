@@ -12,7 +12,7 @@
 |:-------:|-------|----------------|
 | 1 | [Computer Networks and the Internet](./Chapter1-CN-&-Internet.md) | Internet overview, Network edge & core, Delay/Loss/Throughput, Protocol layers, Security basics | 
 | 2 | [Application Layer](./Chapter-2-Application-Layer.md) | HTTP, FTP, SMTP, DNS, P2P, Socket Programming | 
-| 3 | [Transport Layer](./Chapter-03/CN_Chapter3_Notes.md) | UDP, TCP, Reliable data transfer, Congestion control | 
+| 3 | [Transport Layer](./Chapter-3-Transport-Layer.md) | UDP, TCP, Reliable data transfer, Congestion control | 
 | 4 | [Network Layer: Data Plane](./Chapter-04/CN_Chapter4_Notes.md) | Router architecture, IPv4, IPv6, NAT, DHCP | 
 | 5 | [Network Layer: Control Plane](./Chapter-05/CN_Chapter5_Notes.md) | Routing algorithms, OSPF, BGP, SDN, ICMP | 
 | 6 | [Link Layer and LANs](./Chapter-06/CN_Chapter6_Notes.md) | Error detection, MAC protocols, Ethernet, Switches, VLANs | 
