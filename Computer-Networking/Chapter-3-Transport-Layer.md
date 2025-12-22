@@ -612,25 +612,6 @@ stateDiagram-v2
 ### ARQ Requirements
 **FEAR**: **F**eedback, **E**rror detection, **A**cknowledgments, **R**etransmission
 
----
-
-## Quick Revision Checklist
-
-- [ ] Multiplexing/Demultiplexing (UDP 2-tuple, TCP 4-tuple)
-- [ ] UDP segment structure (4 fields)
-- [ ] TCP segment structure (20 bytes minimum)
-- [ ] 3-way handshake (SYN → SYNACK → ACK)
-- [ ] 4-way termination (FIN → ACK → FIN → ACK)
-- [ ] Sequence and ACK numbers (byte-stream based)
-- [ ] RTT estimation (EWMA formula)
-- [ ] Timeout calculation (EstimatedRTT + 4×DevRTT)
-- [ ] Fast retransmit (3 duplicate ACKs)
-- [ ] Flow control (rwnd mechanism)
-- [ ] Congestion control (Slow Start, CA, Fast Recovery)
-- [ ] AIMD principle
-- [ ] GBN vs SR differences
-- [ ] TCP fairness
-- [ ] Stop-and-wait vs pipelining
 
 ---
 
